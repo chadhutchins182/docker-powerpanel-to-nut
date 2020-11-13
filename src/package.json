@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "coverage": "c8 --reporter=text-lcov ava > coverage.lcov"
+    "coverage": "c8 --reporter=html --reporter=text ava",
+    "coverage-upload": "c8 --reporter=text-lcov ava && codecov"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,8 @@
   "homepage": "https://github.com/chadhutchins182/docker-powerpanel-to-nut#readme",
   "devDependencies": {
     "ava": "^3.13.0",
-    "c8": "^7.3.5"
+    "c8": "^7.3.5",
+    "codecov": "^3.8.1"
   },
   "dependencies": {
     "node-nut": "^1.0.3"
