@@ -1,0 +1,21 @@
+
+The UPS information shows as following:
+
+	Properties:
+		Model Name................... OR500LCDRM1U
+		Firmware Number.............. 000000000000
+		Rating Voltage............... 120 V
+		Rating Power................. 300 Watt(500 VA)
+
+	Current UPS status:
+		State........................ Normal
+		Power Supply by.............. Utility Power
+		Utility Voltage.............. 121 V
+		Output Voltage............... 121 V
+		Battery Capacity............. 100 %
+		Remaining Runtime............ 32 min.
+		Load......................... 75 Watt(25 %)
+		Line Interaction............. None
+		Test Result.................. Unknown
+		Last Power Event............. None
+

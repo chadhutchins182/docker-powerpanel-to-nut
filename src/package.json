@@ -1,0 +1,36 @@
+{
+  "name": "docker-powerpanel-to-nut",
+  "version": "1.0.0",
+  "description": "A Docker container for using CyberPower PowerPanel to Network UPS Tools.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "coverage": "c8 --reporter=html --reporter=text ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadhutchins182/docker-powerpanel-to-nut.git"
+  },
+  "keywords": [
+    "docker",
+    "powerpanel",
+    "cyberpower",
+    "network",
+    "UPS",
+    "tool",
+    "NUT"
+  ],
+  "author": "Chad Hutchins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chadhutchins182/docker-powerpanel-to-nut/issues"
+  },
+  "homepage": "https://github.com/chadhutchins182/docker-powerpanel-to-nut#readme",
+  "devDependencies": {
+    "ava": "^3.13.0",
+    "c8": "^7.3.5"
+  },
+  "dependencies": {
+    "node-nut": "^1.0.3"
+  }
+}

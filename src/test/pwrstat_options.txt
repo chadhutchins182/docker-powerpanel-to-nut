@@ -1,0 +1,40 @@
+
+pwrstat [options]
+
+options:
+  [-help]|[-version]|[-reset]|
+  [-status]|[-config]|[-alarm on|off]|[-mute]|[-test]|[-hibernate on|off]|
+  [-pwrfail [-active on|off][-delay sec][-duration sec][-cmd name]
+	    [-shutdown on|off]]|
+  [-lowbatt [-active on|off][-runtime sec][-capacity %][-duration sec][-cmd name]
+	    [-shutdown on|off]]
+
+
+  No arguments	Display help content.(Same as "-help")
+  -status      	Display current status of ups.
+  -config      	Display all daemon configurations.
+  -reset       	Reset all daemon configurations to default.
+  -help        	Display help content.
+  -version     	Display the version of program.
+  -alarm       	Setup alarm action of ups.
+  -mute        	Setup temporally mute alarm when alarm is on enable state.
+  -test        	To verify the UPS will work well in battery power.
+  -hibernate   	Setup hibernate to instead of system shutdown when power event occurred.
+  -pwrfail     	Setup the settings of command-execution for power failure.
+               	(This must be the first argument.)
+
+  -lowbatt     	Setup the settings of command-execution for low battery.
+               	(This must be the first argument.)
+
+  -delay*      	Setup delay seconds when event occurred.
+  -runtime*    	Setup remaining runtime threshold to identify low battery event.
+  -capacity*   	Setup low battery capacity threshold to identify low battery event.
+  -active*     	Setup command-execution or not when event occurred.
+  -cmd*        	Assign command file when event occurred.
+  -duration*   	Setup duration seconds of command-execution when event occurred.
+  -shutdown*   	Setup shutdown OS or not when event occurred.
+
+  Note: Arguments with "*" must follow "-pwrfail" or "-lowbatt".
+
+
+ 
