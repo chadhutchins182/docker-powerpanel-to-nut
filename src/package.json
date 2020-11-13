@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "coverage": "c8 --reporter=html --reporter=text ava"
+    "coverage": "c8 --reporter=lcov --reporter=text ava"
   },
   "repository": {
     "type": "git",
