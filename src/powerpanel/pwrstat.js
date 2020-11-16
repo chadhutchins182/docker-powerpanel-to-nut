@@ -17,6 +17,10 @@ class pwrstat {
 
 }
 
+let getUPSData = function getUPSData(){
+    
+}
+
 
 
 /**
