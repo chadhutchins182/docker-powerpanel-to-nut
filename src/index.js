@@ -1,3 +1,3 @@
-console.log("Test")
-
-setInterval(() => {}, 1 << 30);
+setInterval(function () { 
+    console.log("INTERVAL TEST");
+ }, 3000);
