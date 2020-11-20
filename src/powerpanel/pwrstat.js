@@ -17,8 +17,20 @@ class pwrstat {
 
 }
 
-let getUPSData = function getUPSData(){
-    
+let getUPSData = function getUPSData() {
+
+    const execSync = require('child_process').execSync;
+
+    var cmd = execSync('sudo pwrstat -status');
+
+    try {
+        const upsData = parseUPSData(cmd);
+
+        return upsData;
+    } catch (e) {
+        console.error(e)
+    }
+
 }
 
 
@@ -107,3 +119,4 @@ let parseUPSData = function parseUPSData(upsdata) {
 
 module.exports.parseUPSData = parseUPSData;
 module.exports.pwrstat = pwrstat;
+module.exports.getUPSData = getUPSData;
